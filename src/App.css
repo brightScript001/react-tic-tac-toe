@@ -1,5 +1,14 @@
+body {
+  text-align: center; /* Center the entire application */
+  margin: 0; /* Remove default body margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
 .App {
-  text-align: center;
+  text-align: left; /* Reset text alignment for the App content */
 }
 
 .App-logo {
@@ -15,7 +24,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +43,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+.square {
+  width: 100px;
+  height: 100px;
 }
