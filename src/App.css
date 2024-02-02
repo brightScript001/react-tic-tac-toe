@@ -1,23 +1,22 @@
 body {
-  text-align: center; /* Center the entire application */
-  margin: 0; /* Remove default body margin */
+  text-align: center;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Ensure the body takes up the full viewport height */
+  height: 100vh;
 }
 
 .App {
-  text-align: left; /* Reset text alignment for the App content */
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  /* Animation styles */
+  @media (prefers-reduced-motion: no-preference) {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -44,7 +43,23 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Styling for the square component */
 .square {
   width: 100px;
   height: 100px;
+  /* Add additional styles as needed */
+}
+
+/* Styling for the board rows */
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Improved media query syntax */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
